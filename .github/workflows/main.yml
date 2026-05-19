@@ -1,10 +1,6 @@
 name: CI
 
-on:
-  push:
-  workflow_dispatch:
-  repository_dispatch:
-    types: [pc_trigger]
+on: [push, workflow_dispatch]
 
 jobs:
   build:
